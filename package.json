@@ -1,6 +1,6 @@
 {
   "name": "the-barkeley",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -16,15 +16,19 @@
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
+    "@angular/flex-layout": "^2.0.0-beta.3",
     "@angular/forms": "^2.3.1",
     "@angular/http": "^2.3.1",
+    "@angular/material": "^2.0.0-beta.1",
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.19",
     "core-js": "^2.4.1",
-    "rxjs": "^5.0.1",
+    "rxjs": "^5.0.3",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2"
+    "zone.js": "^0.7.2",
+    "systemjs": "~0.19.38"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",

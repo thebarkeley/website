@@ -1,0 +1,310 @@
+@import '~@angular/material/core/theming/all-theme';
+
+@include md-core();
+
+$font-stack: 'Raleway', sans-serif;
+
+$primary-color-dark: #948b7a;
+$primary-color: #f7e9cc;
+$primary-color-light: #f6e6c3;
+$primary-color-text: black;
+$accent-color: #BDBDBD;
+$primary-text-color: #5F4612;
+$secondary-text-color: #958D7B;
+$divider-color: #BDBDBD;
+
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
+
+body {
+  margin: 0px;
+  font: 100% $font-stack;
+  font-size: 14px;
+  line-height: 1.428;
+  color: $primary-text-color;
+}
+
+p {
+  font-family: $font-stack !important;
+  color: $primary-text-color;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: $font-stack !important;
+  font-weight: bold;
+  color: $primary-color-text !important;
+}
+
+h1 {
+  font-family: $font-stack;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: $font-stack;
+  font-size: 18px;
+  margin-bottom: 5px !important;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: $font-stack;
+  font-size: medium;
+  color: black;
+  position: relative;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  font-family: $font-stack !important;
+}
+
+textarea {
+  font-family: $font-stack !important;
+}
+
+button {
+  font-family: $font-stack !important;
+}
+
+figure {
+  align-items: flex-start !important;
+}
+
+.barkeley-header-logo {
+  max-width: 450px;
+  width: 80%;
+  height: 75px;
+  background-size: contain;
+  background: url('assets/img/barkeley_title.png') no-repeat left bottom;
+  float: left;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+p.barkeley-font {
+  font-family: $font-stack;
+}
+
+.barkeley-left {
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+}
+
+.barkeley-right {
+  position: relative;
+  left: 50px;
+  margin-right: 5%;
+  box-sizing: inherit;
+}
+
+.barkeley-nav-item {
+  position: relative;
+  top: 30px;
+  font-size: 18px !important;
+  font-family: $font-stack !important;
+}
+
+.barkeley-card-short {
+  margin: 2% 10% 7% 10%;
+  padding: 10%;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.barkeley-heading {
+  font-size: medium;
+  font-weight: bold;
+  color: $accent-color;
+}
+
+.barkeley-card-title {
+  font-size: large;
+}
+
+.barkeley-service-content {
+  background-color: #fff;
+  margin-left: 8%;
+  margin-right: 15%;
+  padding: 10px;
+  z-index: 1;
+}
+
+img.barkeley-img-float-right {
+  float: right;
+  margin: 0 0 10px 10px;
+  max-width: 200px;
+  border-style: solid;
+  border-color: $accent-color;
+}
+
+img.barkeley-service-image {
+  margin: 0;
+  background-size: cover;
+  background: no-repeat 50% 0;
+  z-index: -1;
+}
+
+div.barkeley-service {
+  margin: 0;
+  background-size: cover;
+  background: url('assets/img/dog-banner.jpg') no-repeat 0 0;
+  min-height: 240px;
+  z-index: -1;
+}
+
+h1.barkeley-service-title {
+  color: white;
+  font-size:  60px;
+  font-weight: bold;
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+  box-sizing: inherit;
+  z-index: 1;
+}
+
+.barkeley-main-card {
+  min-width: 300px;
+  position: relative;
+  margin-top: -100px;
+}
+
+.barkeley-card {
+  margin: 10%;
+  background-color: $primary-color-light;
+  min-width: 300px;
+}
+
+.barkeley-email-form {
+  min-width: 300px;
+  box-shadow: none !important;
+  font-family: $font-stack !important;
+}
+
+.barkeley-header-top {
+  width: 100%;
+  background-color: $primary-color-light;
+  min-height: 45px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  font-family: $font-stack;
+}
+
+.barkeley-header-banner {
+  background-color: #fff;
+  width: 100%;
+  padding: 65px 0 20px;
+  position: fixed;
+  top: 0;
+  height: 145px;
+  z-index: 99;
+}
+
+.barkeley-footer {
+  background-color: $primary-color;
+  color: $primary-text-color;
+}
+
+.barkeley-content {
+  height: auto;
+  margin: 160px 0px;
+  z-index: 2;
+}
+
+.barkeley-small {
+  font-family: $font-stack;
+  font-size: small;
+}
+
+.barkeley-small-title {
+  font-family: $font-stack;
+  font-size: small;
+}
+
+.barkeley-map {
+  margin: 50px 200px 50px 200px;
+}
+
+img.barkeley-logo {
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  max-height: 200px;
+  float: right;
+  margin: 15px;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.active {
+  background-color: white !important;
+  color: $primary-text-color;
+}
+
+.grid {
+  margin: 0;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #ffcc33;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #003333;
+  border-radius: 2px;
+}
+
+.module:hover {
+  background-color: $primary-color-dark;
+  cursor: pointer;
+  color: $secondary-text-color;
+}
+
+.grid-pad {
+  padding: 10px 0;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+

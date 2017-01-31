@@ -1,18 +1,35 @@
 {
   "compilerOptions": {
     "baseUrl": "",
-    "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
     "mapRoot": "./",
-    "module": "es6",
     "moduleResolution": "node",
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
     "target": "es5",
     "typeRoots": [
       "../node_modules/@types"
-    ]
+    ],
+    "declaration": true,
+    "lib": ["es6", "es2015", "dom"],
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "stripInternal": false,
+    "paths": {
+      "@angular/material": [
+        "../node_modules/@angular/material"
+      ]
+    }
+  },
+  "exclude": [
+    "*-aot.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "../../dist",
+    "skipTemplateCodegen": true,
+    "debug": true
   }
 }
+
