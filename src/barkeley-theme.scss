@@ -35,6 +35,10 @@ $divider-color: #BDBDBD;
     height: 100%;
 }
 
+.md-grid-tile .barkeley-tile-left {
+  justify-content: left !important;
+}
+
 .barkeley-font {
   font-family: $font-stack !important;
   font-size: inherit;
@@ -139,6 +143,8 @@ button {
 
 figure {
   align-items: flex-start !important;
+  font: $font-stack !important;
+  font-size: 2.3vmin !important;
 }
 
 
