@@ -1,54 +1,37 @@
-<h2 class="barkeley-email">Drop Us a Line</h2>
-<md-card class="barkeley-email-form">
-  <md-card-content>
-    <div>
-      <md-input-container>
-        <input md-input [(ngModel)]="contact.name" placeholder="Your name" size="30" required/>
-      </md-input-container>
-    </div>
-    <div>
-      <md-input-container>
-        <input md-input [(ngModel)]="contact.telephone" type="tel" placeholder="Phone"
-               size="20"/>
-      </md-input-container>
-    </div>
-    <div>
-      <md-input-container>
-        <input md-input [(ngModel)]="contact.email" type="email" placeholder="Email" size="30" required/>
-      </md-input-container>
-    </div>
-    <div>
-      <md-input-container width="100%">
+<div class="barkeley-email-form">
+  <div fxFlex fxShow="false" fxShow.gt-xs="true">
+    <h3>Drop Us a Line</h3>
+  </div>
+  <div fxFlex fxHide="false" fxHide.gt-xs="true">
+    <h2 style="text-align: center">Drop Us a Line</h2>
+  </div>
+  <md-card>
+    <md-card-content>
+      <div>
+        <md-input-container>
+          <input md-input [(ngModel)]="contact.name" placeholder="Your name" size="30" required/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input md-input [(ngModel)]="contact.telephone" type="tel" placeholder="Phone"
+                 size="30"/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container>
+          <input md-input [(ngModel)]="contact.email" type="email" placeholder="Email" size="30" required/>
+        </md-input-container>
+      </div>
+      <div>
+        <md-input-container width="90%">
         <textarea md-input [(ngModel)]="contact.message" placeholder="Tell us about your dog" rows="2"
                   cols="100" required></textarea>
-      </md-input-container>
-    </div>
-  </md-card-content>
-  <md-card-actions>
-    <button md-button (click)="sendMail(contact); $event.stopPropagation()">Send</button>
-  </md-card-actions>
-</md-card>
-
-<!--
-<md-card class="barkeley-thumb">
-  <md-card-header class="barkeley-heading">
-    <md-card-title class="barkeley-card-title">Convenient West Berkeley Location</md-card-title>
-  </md-card-header>
-  <md-card-content>
-    <div fxLayout="row" fxFlex class="containerX box">
-      <div fxFlex fxFill fxFlexAlign="center" fxShow="false" fxShow.gt-sm="true">
-        <iframe width="500" height="300" frameborder="1" style="border:3"
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI3E1LvN-hYARiYVozajby3Y&key=AIzaSyCwk2MYxtS3nyxm9kTQMJdirs7QyRMMPZQ"
-                allowfullscreen></iframe>
+        </md-input-container>
       </div>
-      <div fxFlex fxFill fxFlexAlign="center" fxHide="false" fxHide.gt-sm="true">
-        <iframe width="300" height="200" frameborder="1" style="border:3"
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI3E1LvN-hYARiYVozajby3Y&key=AIzaSyCwk2MYxtS3nyxm9kTQMJdirs7QyRMMPZQ"
-                allowfullscreen></iframe>
-      </div>
-    </div>
-    <p class="barkeley-font">You'll find us at the southwest corner of San Pablo and Pardee, close to the Ashby and
-      University exits of the I-80/580, and just a ball chase away from The Berkeley Humane Society.</p>
-  </md-card-content>
+    </md-card-content>
+    <md-card-actions>
+      <button md-mini-fab (click)="sendMail(contact); $event.stopPropagation()"><i class="mdi mdi-email-variant"></i></button>
+    </md-card-actions>
   </md-card>
--->
+</div>

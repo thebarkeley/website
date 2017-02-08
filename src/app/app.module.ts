@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+import { MaterialModule, MdDialog, MdDialogRef } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
@@ -15,6 +15,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { GroomingComponent } from './grooming/grooming.component';
+import { TrainingComponent } from './training/training.component';
+import { WalkingComponent } from './walking/walking.component';
+import { AmandaComponent } from './amanda/amanda.component';
+import { FaqComponent } from './faq/faq.component';
+import { MenuDialogComponent } from './menu-dialog/menu-dialog.component';
 
 
 @NgModule({
@@ -26,7 +32,13 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     DaycareComponent,
     FooterComponent,
-    RegisterComponent
+    RegisterComponent,
+    GroomingComponent,
+    TrainingComponent,
+    WalkingComponent,
+    AmandaComponent,
+    FaqComponent,
+    MenuDialogComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -37,6 +49,7 @@ import { AppRoutingModule } from './app-routing.module';
     MaterialModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MenuDialogComponent]
 })
 export class AppModule { }

@@ -7,7 +7,6 @@ $font-stack: 'Raleway', sans-serif;
 $primary-color-dark: #948b7a;
 $primary-color: #f7e9cc;
 $primary-color-light: #f6e6c3;
-$primary-color-text: black;
 $accent-color: #BDBDBD;
 $primary-text-color: #5F4612;
 $secondary-text-color: #958D7B;
@@ -28,48 +27,96 @@ $divider-color: #BDBDBD;
     min-width: 60px;
   }
 }
+.md-dialog-container {
+  background: white !important;
+    overflow: auto;
+    max-width: 95vw;
+    width: 100%;
+    height: 100%;
+}
+
+.barkeley-font {
+  font-family: $font-stack !important;
+  font-size: inherit;
+}
+
+.md-select-option {
+  font-family: $font-stack !important;
+  font-size: inherit;
+}
+
+
+.md-select-placeholder {
+  font-size: 5.2vw;
+  line-height: normal;
+  color: $primary-text-color !important;
+}
+
+.md-select-content {
+  background: white !important;
+}
 
 body {
-  margin: 0px;
-  font: 100% $font-stack;
-  font-size: 14px;
-  line-height: 1.428;
+  margin: 0;
+  font: 100% $font-stack !important;
+  font-size: 2.1vmin;
+  line-height: normal;
   color: $primary-text-color;
+}
+
+head {
+  font: $font-stack !important;
 }
 
 p {
   font-family: $font-stack !important;
   color: $primary-text-color;
+  font-size: 2.3vmin !important;
+  line-height: normal;
 }
 
 a {
   text-decoration: none !important;
-  font-family: $font-stack !important;
+  font: $font-stack !important;
+  font-size: inherit;
   font-weight: bold;
-  color: $primary-color-text !important;
+  color: $primary-text-color !important;
+}
+
+a.barkeley-menu-main {
+  font-size: 5.2vw;
+  font-weight: normal;
+  text-align: center;
+  margin-outside: 10px;
+}
+
+a.barkeley-menu-sub {
+  font-size: inherit !important;
 }
 
 h1 {
-  font-family: $font-stack;
-  font-size: 28px;
+  font-size: 5.2vmin;
+  line-height: normal;
 }
 
 h2 {
-  font-family: $font-stack;
-  font-size: 18px;
+  font-size: 4vmin;
   margin-bottom: 5px !important;
+  line-height: normal;
 }
 
 h3 {
-  text-align: center;
+  font-size: 3vmin;
   margin-bottom: 0;
+  line-height: normal;
 }
 
 h4 {
-  font-family: $font-stack;
-  font-size: medium;
+  font-size: 2.8vmin;
   color: black;
+  font-weight: bold;
   position: relative;
+  line-height: normal;
 }
 
 *, *:after, *:before {
@@ -94,25 +141,70 @@ figure {
   align-items: flex-start !important;
 }
 
+
+
+div.barkeley-center {
+  text-align: center;
+  padding-top: 1vh;
+}
+
+div.black {
+  color: black;
+}
+
+ul.barkeley-list {
+  list-style: none outside;
+  font-size: 2.6vmin;
+}
+
+ul.circle {
+  list-style: circle;
+}
+
+ul.square {
+  list-style: square;
+}
+
+ul.disc {
+  list-style: disc;
+}
+
+span.barkeley-menu {
+  vertical-align: 25%;
+  z-index: 2;
+}
+
+div.barkeley-menu-dialog {
+  background-color: white !important;
+  opacity: 1.0 !important;
+}
+
 .barkeley-header-logo {
-  max-width: 450px;
-  width: 80%;
+  width: 100%;
   height: 75px;
   background-size: contain;
   background: url('assets/img/barkeley_title.png') no-repeat left bottom;
   float: left;
-  margin-left: 5%;
-  display: inline-block;
+  margin-left: 3%;
+  margin-right: -8%;
+  display: inline;
 }
 
-p.barkeley-font {
-  font-family: $font-stack;
+.hamburger-button {
+  left: 12px;
+  background-color: $primary-color-light;
+}
+
+.barkeley-menu-item {
+  display: inline !important;
+  z-index: 2;
 }
 
 .barkeley-left {
   display: inline-block;
   float: left;
   margin-left: 5%;
+  font-size: 1vmax !important;
 }
 
 .barkeley-right {
@@ -120,6 +212,15 @@ p.barkeley-font {
   left: 50px;
   margin-right: 5%;
   box-sizing: inherit;
+  font-size: 1vmax !important;
+}
+
+.barkeley-right-small {
+  position: relative;
+  text-align: right;
+  margin-right: 5vmax;
+  box-sizing: inherit;
+  font-size: 2vmax !important;
 }
 
 .barkeley-nav-item {
@@ -129,40 +230,36 @@ p.barkeley-font {
   font-family: $font-stack !important;
 }
 
-.barkeley-card-short {
-  margin: 2% 10% 7% 10%;
-  padding: 10%;
-  max-width: 500px;
-  min-width: 200px;
-}
-
-.barkeley-heading {
-  font-size: medium;
-  font-weight: bold;
-  color: $accent-color;
-}
-
-.barkeley-card-title {
-  font-size: large;
-}
-
 .barkeley-service-content {
   background-color: #fff;
   margin-left: 8%;
   margin-right: 15%;
   padding: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
-img.barkeley-img-float-right {
-  float: right;
+.barkeley-service-content-small {
+  background-color: #fff;
+  margin-left: 8%;
+  margin-right: 15%;
+  padding: 5px 20px;
+  z-index: 2;
+  position: relative;
+  margin-top: -75px;
+}
+
+img.float-right {
   margin: 0 0 10px 10px;
-  max-width: 200px;
-  border-style: solid;
-  border-color: $accent-color;
+  float: right;
+}
+
+img.barkeley-shadow-box {
+  width: 20vmax;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
 img.barkeley-service-image {
+  width: 100%;
   margin: 0;
   background-size: cover;
   background: no-repeat 50% 0;
@@ -170,46 +267,53 @@ img.barkeley-service-image {
 }
 
 div.barkeley-service {
+  width: 100%;
   margin: 0;
   background-size: cover;
-  background: url('assets/img/dog-banner.jpg') no-repeat 0 0;
-  min-height: 240px;
+  background: url('assets/img/dog-banner.jpg') no-repeat 50% 0;
+  min-height: 20vmax;
+  z-index: -1;
+}
+
+div.barkeley-service-small {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  background-size: contain;
+  background: url('assets/img/dog-banner-small.jpg') no-repeat 50% 0;
+  min-height: 150px;
   z-index: -1;
 }
 
 h1.barkeley-service-title {
   color: white;
-  font-size:  60px;
+  font-size: 6vw;
   font-weight: bold;
   float: right;
   margin-right: 100px;
   margin-top: 50px;
   box-sizing: inherit;
-  z-index: 1;
+  z-index: 2;
 }
 
-.barkeley-main-card {
-  min-width: 300px;
-  position: relative;
-  margin-top: -100px;
-}
-
-.barkeley-card {
-  margin: 10%;
-  background-color: $primary-color-light;
-  min-width: 300px;
+h1.small {
+  font-size: 8vw;
+  float: none;
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 0;
+  padding-top: 30px;
 }
 
 .barkeley-email-form {
-  min-width: 300px;
-  box-shadow: none !important;
-  font-family: $font-stack !important;
+  min-width: 200px;
+  margin-bottom: 50px;
 }
 
 .barkeley-header-top {
   width: 100%;
   background-color: $primary-color-light;
-  min-height: 45px;
+  min-height: 35px;
   padding: 0;
   position: fixed;
   top: 0;
@@ -227,6 +331,25 @@ h1.barkeley-service-title {
   z-index: 99;
 }
 
+.barkeley-header-banner-small {
+  background-color: #fff;
+  width: 100%;
+  padding: 35px 0 20px;
+  position: fixed;
+  top: 0;
+  height: 95px;
+  z-index: 99;
+}
+
+.barkeley-header-logo-small {
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background: url('assets/img/barkeley_title_small.png') no-repeat center center;
+  margin-top: 10px;
+  display: inline-block;
+}
+
 .barkeley-footer {
   background-color: $primary-color;
   color: $primary-text-color;
@@ -234,8 +357,14 @@ h1.barkeley-service-title {
 
 .barkeley-content {
   height: auto;
-  margin: 160px 0px;
-  z-index: 2;
+  margin: 14vmax 0;
+  z-index: 3;
+}
+
+.barkeley-content-small {
+  height: auto;
+  margin: 135px 0;
+  z-index: 3;
 }
 
 .barkeley-small {
@@ -243,22 +372,24 @@ h1.barkeley-service-title {
   font-size: small;
 }
 
-.barkeley-small-title {
-  font-family: $font-stack;
-  font-size: small;
-}
-
-.barkeley-map {
-  margin: 50px 200px 50px 200px;
-}
-
 img.barkeley-logo {
   height: auto;
   width: auto;
-  max-width: 150px;
-  max-height: 200px;
+  max-width: 13 0px;
+  max-height: 180px;
+  margin: 30px;
+}
+
+img.right {
   float: right;
-  margin: 15px;
+}
+
+img.overlay {
+  float: right;
+  position: relative;
+  display: block;
+  margin: -85px 30px 0 auto;
+  height: 120px;
 }
 
 [class*='col-'] {

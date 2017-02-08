@@ -1,0 +1,54 @@
+<button md-mini-fab (click)="dialogRef.close()" style="position:absolute;left:10px;top:5px"><i
+  class="mdi mdi-close mdi-12px"></i>
+</button>
+<div class="barkeley-center black" style="position:relative;top:25px;">
+  <h2>2730 San Pablo Avenue, Berkeley, CA</h2>
+
+  <h2>510-900-1023</h2>
+  <md-dialog-actions>
+
+    <md-select placeholder="Services" style="position: relative;margin-top: 25px">
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/boarding">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-weather-night"></i>&nbsp;&nbsp;Boarding
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/daycare">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-stadium"></i>&nbsp;&nbsp;Daycare
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/grooming">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-flower"></i>&nbsp;&nbsp;Grooming
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/training">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-school"></i>&nbsp;&nbsp;Training
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/walking">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-paw"></i>&nbsp;&nbsp;Walking
+        </a>
+      </md-option>
+    </md-select>
+    <p style="position:relative;margin:0;padding:0">&nbsp;</p>
+    <md-select placeholder="About Us" style="position: relative;margin-top: 1vh">
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/amanda">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-library"></i>&nbsp;&nbsp;Amanda's Story
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/team">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-human-greeting"></i>&nbsp;&nbsp;Meet the Team
+        </a>
+      </md-option>
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/faq">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-comment-question-outline"></i>&nbsp;&nbsp;FAQ
+        </a>
+      </md-option>
+    </md-select>
+
+    <p style="position: relative;margin-top: 25px">
+      <a routerLink="/register" (click)="dialogRef.close()" class="barkeley-menu-main"
+         ><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Register
+      </a>
+    </p>
+  </md-dialog-actions>
+</div>

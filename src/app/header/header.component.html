@@ -1,6 +1,6 @@
 <header>
   <!-- for larger screens -->
-  <div fxFlex fxShow="false" fxShow.gt-sm="true">
+  <div fxFlex fxShow="false" fxShow.gt-xs="true">
     <div class="barkeley-header-top">
       <div fxLayout="row" fxFlex class="containerX box">
         <div fxFlex fxFill fxFlexAlign="left">
@@ -9,9 +9,10 @@
       </div>
     </div>
     <div class="barkeley-header-banner">
-      <div fxLayout="row" fxFlex fxFlexAlign="left end">
-        <a class="barkeley-header-logo" routerLink="/about"></a>
+      <div fxLayout="row" fxFlex fxFlexAlign="space-between end">
+        <a class="barkeley-header-logo" fxFlex routerLink="/about"></a>
         <nav md-tab-nav-bar class="barkeley-right">
+
           <a md-tab-link routerLink="/daycare" routerLinkActive="active" class="barkeley-nav-item">
             Daycare
           </a>
@@ -26,49 +27,27 @@
     </div>
   </div>
   <!-- small screens -->
-  <div fxFlex fxHide="false" fxHide.gt-sm="true">
-    <!--
-    <md-toolbar>
-      <div class="barkeley-header">
-        <div fxLayout="row" fxFlex class="containerX box">
-          <div fxFlex fxFill fxFlexAlign="left" fxShow="false" fxShow.gt-sm="true">
-            <p class="barkeley-left">2730 San Pablo Avenue, Berkeley, CA <span>|</span> <a href="tel:+5109001023">(510)
-              900-1023</a></p></div>
-          <div fxFlex fxFill fxFlexAlign="right" fxHide="false" fxHide.gt-sm="true">
-            <div fxFlex fxFill fxFlexAlign="center" class="barkeley-small">2730 San Pablo, Berkeley <span>|</span> <a
-              href="tel:+5109001023">510-900-1023</a></div>
-          </div>
+  <div fxFlex fxHide="false" fxHide.gt-xs="true">
+    <div class="barkeley-header-top containerX box">
+      <div fxFlex fxLayout="row" fxAlign="space-between center">
+        <div fxFlex="10%">
+          <button md-icon-button (click)="openDialog()" class="hamburger-button"><i class="mdi mdi-menu mdi-24px"></i>
+          </button>
+        </div>
+        <div fxFlex="90%">
+          <p class="barkeley-right-small">2730 San Pablo, Berkeley<span>|</span> <a href="tel:+5109001023">(510)
+            900-1023</a></p>
         </div>
       </div>
-      <md-toolbar-row>
-        <div class="barkeley-header-banner">
-          <div fxLayout="row" fxFlex fxShow="false" fxShow.gt-md="true" fxAlign="left">
-            <img src="../../assets/img/barkeley_title.png">
-          </div>
-          <div fxFlex fxFill fxFlexAlign="right" fxShow="false" fxShow.gt-sm="true">
-            <nav md-tab-nav-bar>
-              <a md-tab-link routerLink="/about" routerLinkActive="active">
-                Home
-              </a>
-              <a md-tab-link routerLink="/daycare" routerLinkActive="active">
-                Daycare
-              </a>
-              <a md-tab-link routerLink="/boarding" routerLinkActive="active">
-                Boarding
-              </a>
-              <a md-tab-link routerLink="/contact" routerLinkActive="active">
-                Contact
-              </a>
-            </nav>
-          </div>
-        </div>
-      </md-toolbar-row>
-    </md-toolbar>
-  </div>
--->
-    small screen here
+    </div>
+    <div class="barkeley-header-banner-small">
+      <a class="barkeley-header-logo-small" routerLink="/about"></a>
+    </div>
   </div>
 </header>
 <!-- for small screen -->
+
+
+
 
 
