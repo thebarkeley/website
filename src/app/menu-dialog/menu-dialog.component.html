@@ -20,6 +20,7 @@
         <a class="barkeley-menu-sub"><i class="mdi mdi-flower"></i>&nbsp;&nbsp;Grooming
         </a>
       </md-option>
+      <!--
       <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/training">
         <a class="barkeley-menu-sub"><i class="mdi mdi-school"></i>&nbsp;&nbsp;Training
         </a>
@@ -28,6 +29,7 @@
         <a class="barkeley-menu-sub"><i class="mdi mdi-paw"></i>&nbsp;&nbsp;Walking
         </a>
       </md-option>
+      -->
     </md-select>
     <p style="position:relative;margin:0;padding:0">&nbsp;</p>
     <md-select placeholder="About Us" style="position: relative;margin-top: 1vh">
@@ -43,13 +45,13 @@
         <a class="barkeley-menu-sub"><i class="mdi mdi-comment-question-outline"></i>&nbsp;&nbsp;FAQ
         </a>
       </md-option>
+
+      <md-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/register">
+        <a class="barkeley-menu-sub"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Registration
+        </a>
+      </md-option>
     </md-select>
 
-    <p style="position: relative;margin-top: 25px">
-      <a href="https://thebarkeley.gingrapp.com/customer" (click)="dialogRef.close()" class="barkeley-menu-main"
-         ><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Register
-      </a>
-    </p>
     <p style="position: relative;margin-top: 25px">
       <a href="https://thebarkeley.gingrapp.com/front_end/reservations/add" (click)="dialogRef.close()" class="barkeley-menu-main"
         ><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Reservations
