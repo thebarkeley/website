@@ -8,7 +8,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="description"
         content="The Barkeley provides the finest dog daycare and boarding services in Berkeley, Emeryville, Oakland and the East Bay. Call us to schedule a reservation or learn more."/>
-  <meta name="keywords" itemprop="keywords" content="dog day care east bay,doggy day care packages,dog boarding east bay,berkeley,el cerrito,oakland,kensington,albany and more." />
+  <meta name="keywords" itemprop="keywords"
+        content="dog day care east bay,doggy day care packages,dog boarding east bay,berkeley,el cerrito,oakland,kensington,albany and more."/>
   <meta name="robots" content="noodp"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:type" content="website"/>
@@ -26,6 +27,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=5">
   <link rel="canonical" href="http://thebarkeley.com/"/>
   <link rel="publisher" href="https://plus.google.com/115801356450743543484"/>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+  <!--<script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC2fMEMuEPYcktMmZei-LVTqfRE1_NMyqQ&signed_in=true&libraries=places"></script>
+
   <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -76,8 +81,6 @@
 "priceRange" : "$$"
 }
 
-
-
   </script>
 </head>
 <body>
@@ -95,6 +98,19 @@
   })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'UA-91219118-1', 'auto');
 </script>
+<!--<script>
+  jQuery(document).ready(function( $ ) {
+    $("#google-reviews").googlePlaces({
+      placeId: 'ChIJTZxHLvN-hYARcWbEQJPD_ug'
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows: 4
+    });
+  });
+</script>-->
 <my-app>Welcome to The Barkeley, please wait...</my-app>
+<div>
+  <script src="//embed.broadly.com/include.js" defer data-url="/5931e2dd975286004388cc0c/reviews"></script>
+</div>
 </body>
 </html>
