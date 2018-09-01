@@ -1,5 +1,5 @@
-import { Component, ViewContainerRef } from '@angular/core';
-import { MdDialog, MdDialogRef } from '@angular/material';
+import { Component, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'app-menu-dialog',
@@ -8,6 +8,6 @@ import { MdDialog, MdDialogRef } from '@angular/material';
 })
 
 export class MenuDialogComponent {
-  constructor(public dialogRef:MdDialogRef<MenuDialogComponent>) {
+  constructor(public dialogRef:MatDialogRef<MenuDialogComponent>) {
   }
 }

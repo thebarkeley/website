@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Router, NavigationEnd} from '@angular/router';
+
 declare let ga: Function;
 
 @Component({
@@ -9,7 +10,7 @@ declare let ga: Function;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The Barkeley';
+  title = 'The Barkmont';
 
   constructor(public router:Router) {
     this.router.events.subscribe(event => {

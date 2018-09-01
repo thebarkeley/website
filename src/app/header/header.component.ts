@@ -1,6 +1,5 @@
 import { Component }      from '@angular/core';
-import { MdDialog, MdDialogRef, MdDialogConfig }  from '@angular/material';
-
+import { MatDialog, MatDialogRef, MatDialogConfig }  from '@angular/material';
 import { MenuDialogComponent } from '../menu-dialog/menu-dialog.component';
 
 
@@ -13,11 +12,11 @@ import { MenuDialogComponent } from '../menu-dialog/menu-dialog.component';
 export class HeaderComponent {
   selectedPage:string;
 
-  constructor(public dialog: MdDialog) {
+  constructor(public dialog: MatDialog) {
   }
 
   public openDialog() {
-    let config = new MdDialogConfig();
+    let config = new MatDialogConfig();
     config.height = '100%';
     config.width = '100%';
     let dialogRef = this.dialog.open(MenuDialogComponent, config);

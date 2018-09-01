@@ -1,6 +1,6 @@
-@import '~@angular/material/core/theming/all-theme';
+@import '~@angular/material/theming';
 
-@include md-core();
+@include mat-core();
 
 $font-stack: 'Raleway', sans-serif;
 
@@ -27,7 +27,7 @@ $divider-color: #BDBDBD;
     min-width: 60px;
   }
 }
-.md-dialog-container {
+.mat-dialog-container {
   background: white !important;
     overflow: auto;
     max-width: 95vw;
@@ -35,7 +35,7 @@ $divider-color: #BDBDBD;
     height: 100%;
 }
 
-.md-grid-tile .barkeley-tile-left {
+.mat-grid-tile .barkeley-tile-left {
   justify-content: left !important;
 }
 
@@ -44,19 +44,19 @@ $divider-color: #BDBDBD;
   font-size: inherit;
 }
 
-.md-select-option {
+.mat-select-option {
   font-family: $font-stack !important;
   font-size: inherit;
 }
 
 
-.md-select-placeholder {
+.mat-select-placeholder {
   font-size: 5.2vw;
   line-height: normal;
   color: $primary-text-color !important;
 }
 
-.md-select-content {
+.mat-select-content {
   background: white !important;
 }
 
@@ -218,6 +218,7 @@ div.barkeley-menu-dialog {
   left: 50px;
   margin-right: 5%;
   box-sizing: inherit;
+  min-height: 100px;
   font-size: 1vmax !important;
 }
 
@@ -486,7 +487,7 @@ img.overlay {
 }
 
 .active {
-  background-color: white !important;
+  background-color: #f6e6c3 !important;
   color: $primary-text-color;
 }
 

@@ -3,7 +3,7 @@
   <div fxFlex fxShow="false" fxShow.gt-xs="true">
 
     <div class="barkeley-header-top">
-      <div fxLayout="row" fxFlex class="containerX box">
+      <div fxLayout="row" fxFlex>
         <div fxFlex fxFill fxFlexAlign="left">
           <p class="barkeley-left">2730 San Pablo Avenue, Berkeley, CA <span>|</span> <a href="tel:+5109001023">(510)
             900-1023</a></p></div>
@@ -13,18 +13,18 @@
 
       <div fxLayout="row" fxFlex fxFlexAlign="space-between end">
         <a class="barkeley-header-logo" fxFlex routerLink="/about"></a>
-        <nav md-tab-nav-bar class="barkeley-right">
+        <nav mat-tab-nav-bar class="barkeley-right">
 
-          <a md-tab-link routerLink="/daycare" routerLinkActive="active" class="barkeley-nav-item">
+          <a mat-tab-link routerLink="/daycare" routerLinkActive="active" class="barkeley-nav-item">
             Daycare
           </a>
-          <a md-tab-link routerLink="/boarding" routerLinkActive="active" class="barkeley-nav-item">
+          <a mat-tab-link routerLink="/boarding" routerLinkActive="active" class="barkeley-nav-item">
             Boarding
           </a>
-          <a md-tab-link routerLink="/register" routerLinkActive="active" class="barkeley-nav-item">
+          <a mat-tab-link routerLink="/register" routerLinkActive="active" class="barkeley-nav-item">
             Requirements
           </a>
-          <a md-tab-link href="https://the-barkmont.gingrapp.com/front_end/reservations/add" class="barkeley-nav-item"
+          <a mat-tab-link href="https://the-barkmont.gingrapp.com/front_end/reservations/add" class="barkeley-nav-item"
              target="_blank">
             Book Your Stay
           </a>
@@ -37,7 +37,7 @@
     <div class="barkeley-header-top containerX box">
       <div fxFlex fxLayout="row" fxAlign="space-between center">
         <div fxFlex="10%">
-          <button md-icon-button (click)="openDialog()" class="hamburger-button"><i class="mdi mdi-menu mdi-24px"></i>
+          <button mat-icon-button (click)="openDialog()" class="hamburger-button"><i class="mdi mdi-menu mdi-24px"></i>
           </button>
         </div>
         <div fxFlex="90%">
