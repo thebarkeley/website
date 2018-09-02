@@ -3,37 +3,27 @@
 </button>
 <div class="barkeley-center black" style="position:relative;top:25px;">
   <h2>2730 San Pablo Avenue, Berkeley, CA</h2>
-
   <h2>510-900-1023</h2>
-  <mat-dialog-actions>
 
-    <mat-select placeholder="Services" style="position: relative;margin-top: 25px">
-      <mat-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/boarding">
-        <a class="barkeley-menu-sub"><i class="mdi mdi-weather-night"></i>&nbsp;&nbsp;Boarding
+  <mat-list>
+    <mat-list-item (click)="dialogRef.close()" routerLink="/daycare">
+      <a class="barkeley-menu-main"><i class="mdi mdi-stadium"></i>&nbsp;&nbsp;Daycare
+      </a>
+    </mat-list-item>
+    <mat-list-item (click)="dialogRef.close()" routerLink="/boarding">
+        <a class="barkeley-menu-main"><i class="mdi mdi-weather-night"></i>&nbsp;&nbsp;Boarding
         </a>
-      </mat-option>
-      <mat-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/daycare">
-        <a class="barkeley-menu-sub"><i class="mdi mdi-stadium"></i>&nbsp;&nbsp;Daycare
-        </a>
-      </mat-option>
-      <mat-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/grooming">
-        <a class="barkeley-menu-sub"><i class="mdi mdi-flower"></i>&nbsp;&nbsp;Grooming
-        </a>
-      </mat-option>
-    </mat-select>
-    <p style="position:relative;margin:0;padding:0">&nbsp;</p>
-    <mat-select placeholder="About Us" style="position: relative;margin-top: 1vh">
-
-      <mat-option class="barkeley-font" (click)="dialogRef.close()" routerLink="/register">
-        <a class="barkeley-menu-sub"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Registration
-        </a>
-      </mat-option>
-    </mat-select>
-
-    <p style="position: relative;margin-top: 25px">
+    </mat-list-item>
+    <mat-list-item (click)="dialogRef.close()" routerLink="/register">
+      <a class="barkeley-menu-main"><i class="mdi mdi-newspaper"></i>&nbsp;&nbsp;Requirements
+      </a>
+    </mat-list-item>
+    <mat-list-item>
       <a href="https://the-barkmont.gingrapp.com/front_end/reservations/add" (click)="dialogRef.close()" class="barkeley-menu-main"
         ><i class="mdi mdi-feather"></i>&nbsp;&nbsp;Reservations
       </a>
-    </p>
-  </mat-dialog-actions>
+    </mat-list-item>
+
+  </mat-list>
+
 </div>
