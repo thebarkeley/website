@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
 import { BoardingComponent } from './boarding/boarding.component';
 import { DaycareComponent } from './daycare/daycare.component';
+import { PuppiesComponent } from './puppies/puppies.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -30,6 +31,7 @@ import { MenuDialogComponent } from './menu-dialog/menu-dialog.component';
     FooterComponent,
     RegisterComponent,
     GroomingComponent,
+    PuppiesComponent,
     FaqComponent,
     MenuDialogComponent
   ],
